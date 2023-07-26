@@ -12,12 +12,14 @@ public class Contador {
         catch(ParametrosInvalidosException e){
            System.out.printf("O segundo par\u00E2metro deve ser maior que o primeiro");
         }
+
+        sc.close();
     }
 
     static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException{
         int contagem = parametroDois - parametroUm;
 
-        for (int i = 0; i < contagem; i++){
+        for (int i = 0; i <= contagem; i++){
             System.out.println("Imprimindo o número " + (i+1));
         }
 
